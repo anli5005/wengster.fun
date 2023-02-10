@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import React from 'react';
 import { Ubuntu } from '@next/font/google';
+import CustomHtml from './CustomHtml';
 
 const ubuntu = Ubuntu({
   weight: ["400", "700"],
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <CustomHtml>
       <head>
         <title>Wengster</title>
         <meta name="theme-color" content="#050047"></meta>
@@ -26,6 +27,6 @@ export default function RootLayout({
       <body className={`overflow-y-scroll bg-white dark:bg-[#10172b] text-black dark:text-white ${ubuntu.className}`}>
         {children}
       </body>
-    </html>
+    </CustomHtml>
   );
 }
