@@ -17,6 +17,10 @@ export default function RootLayout({
     <html>
       <head>
         <title>Wengster</title>
+        <meta property="og:title" content="wengster.fun" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://wengster.fun" />
+        <meta property="og:description" content="Julian Weng L" />
       </head>
       <body className={`overflow-y-scroll bg-white dark:bg-[#10172b] text-black dark:text-white ${ubuntu.className}`}>
         {children}
