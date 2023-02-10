@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: "ubuntu, system-ui, sans-serif",
+      },
       // https://vercel.com/design/color
       colors: {
         vercel: {
